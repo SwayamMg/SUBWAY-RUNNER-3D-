@@ -1,0 +1,24 @@
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<script type="module" src="game.js"></script>
+
+<!-- The UI Layer -->
+<div id="ui">
+    <h1 style="color: #ffcc00; text-shadow: 2px 2px #000; margin: 0;">SUBWAY RUNNER</h1>
+    <div class="stats">Coins: <span id="coin-count">0</span></div>
+    <div class="stats">Distance: <span id="distance">0</span>m</div>
+</div>
+
+<!-- The Game Over Layer (Higher Z-index) -->
+<div id="game-over">
+    <h1 style="color: #e74c3c; margin: 0;">BUSTED!</h1>
+    <p style="color: #333; font-weight: bold;">The inspector caught you.</p>
+    <button class="restart-btn" onclick="window.resetGame()">RUN AGAIN</button>
+</div>

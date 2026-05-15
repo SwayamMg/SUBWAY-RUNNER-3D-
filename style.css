@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #87CEEB; /* Sky Blue */
+    font-family: 'Arial Black', sans-serif;
+}
+
+canvas {
+    display: block;
+    width: 100vw !important;
+    height: 100vh !important;
+    touch-action: none;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.stats { font-size: 1.2rem; color: #fff; text-shadow: 1px 1px #000; }
+
+#game-over {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    z-index: 9999; /* This keeps it above the game */
+    border: 6px solid #ffcc00;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    width: 260px;
+}
+
+.restart-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    pointer-events: auto;
+}
